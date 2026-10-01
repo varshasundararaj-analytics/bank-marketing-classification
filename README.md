@@ -139,9 +139,25 @@ The models were evaluated using four classification metrics:
 | **Recall** | Measures how many actual positive cases were correctly identified |
 | **F1-score** | Provides a balance between Precision and Recall |
 
-Because the dataset contains class imbalance, **F1-score was considered an important metric** when comparing the models.
+### Model Performance Comparison
 
-Based on the submitted analysis, **Random Forest produced the strongest overall performance**, with a good balance between Precision, Recall and F1-score.
+| Model | Accuracy | Precision | Recall | F1-score |
+|---|---:|---:|---:|---:|
+| Decision Tree | 85.87% | 92.97% | 90.61% | 91.77% |
+| Random Forest | 85.65% | 89.26% | **94.92%** | **92.00%** |
+| SVM | 71.52% | **94.31%** | 71.57% | 81.39% |
+
+The Decision Tree achieved the highest test accuracy at **85.87%**, while Random Forest achieved the highest recall (**94.92%**) and F1-score (**92.00%**). SVM produced the highest precision (**94.31%**) but comparatively lower recall and F1-score.
+
+Because the dataset contains class imbalance, **F1-score was considered an important metric** when comparing the models. Based on this metric, Random Forest provided the strongest balance between Precision and Recall in this analysis.
+
+### GridSearchCV Results
+
+| Model | Best Parameters | Cross-Validation Accuracy |
+|---|---|---:|
+| Decision Tree | `max_depth = 3` | 89.63% |
+| Random Forest | `n_estimators = 15` | **89.83%** |
+| SVM | `kernel = 'rbf', C = 1` | 89.54% |
 
 ---
 
