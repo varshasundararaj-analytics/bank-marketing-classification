@@ -252,6 +252,6 @@ Through this project, I gained practical experience in:
 MSc Business Analytics  
 Dublin Business School, Ireland
 
-[LinkedIn](https://www.linkedin.com/in/varsha-sundararaj-40a463201) | 
-
-[GitHub](https://github.com/varshasundararaj-analytics)
+## 🔗 Connect With Me
+- LinkedIn: https://www.linkedin.com/in/varsha-sundararaj-40a463201
+- GitHub: https://github.com/varshasundararaj-analytics
